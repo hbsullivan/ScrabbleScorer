@@ -34,5 +34,15 @@ namespace ScrabbleScorer.Tests
       CollectionAssert.AreEqual(expected, result); 
     }
 
+    [TesteMethod]
+
+    public void WordScore_ReturnsScoreOfWord_Int()
+    {
+      string userWord = "garden";
+      Scrabble newScrabble = new Scrabble(userWord);
+      int expected = 8;
+      int result = newScrabble.WordScore();
+    }
+
   }
 }

@@ -2,9 +2,10 @@ namespace ScrabbleScorer.Models
 {
   public class Scrabble
   {
-    // public string Scrabble(string userWord)
-    // {
-
-    // }
+    public string UserWord { get; set; }
+    public Scrabble(string userWord)
+    {
+      UserWord = userWord;
+    }
   }
 }

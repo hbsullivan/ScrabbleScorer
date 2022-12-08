@@ -9,7 +9,7 @@ namespace ScrabbleScorer.Tests
     [TestMethod]
     public void CreateDictionary_CreateConstructor_DictionaryOfScores()
     {
-      Scrabble newScrabble = new Scrabble();
+      Scrabble newScrabble = new Scrabble("garden");
       // Dictionary<int, string> newDictionary = new Dictionary<int, string>() {};
       Assert.AreEqual(typeof(Scrabble), newScrabble.GetType());
     }

@@ -6,22 +6,22 @@
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _C Sharp_
+* _.Net 6.0_
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This program will calculate the score of a given Scrabble word according to the official letter point values in the board game Scrabble. It does not account for extra word score multipliers on the board itself._
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Clone the repo from github_
+* _Open a console_
+* _Navigate to the ScrabbleScorer directory in your console_
+* _Enter the dotnet run command_
+  `$ dotnet run'
+* _Enter your scrabble word when prompted and recieve your score_
+* _Enter y if you would like to check another word_
 
 ## Specs
 UI:
@@ -37,41 +37,27 @@ UI:
 
 
 Business:
-1) Create dictionary with scrabble scores
-{1, "aeiou"}, {2, dg};
+1) Create dictionary with scrabble scores ex.{1, "aeiou"}, {2, dg};
 
 2) Gather input as string ex. "hello"
 
-3) Convert string to an array 
-
-dictionary.Value.Contains(array[i])
-
-string[] charArray = {"h", "e", "l", "l", "o"}
+3) Convert string to an array ex. {'h', 'e', 'l', 'l', 'o'}
 
 4) Loop through the character array. Compare character against score values in Dictionary. Increment score counter using if/else logic.
-
-for (i = 0; i < stringarray.Length; i++>)
-{
-  foreach(KeyValuePair<string, string> entry in myDictionary)
-  {
-    if (dictionary value.Contains(stringArray[i]))
-    {
-      score += entry.Value
-    }
-  }
-}
-
-
 
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _No known bugs_
 
 ## License
 
+MIT License
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+Copyright (c) [2022] [Henry Sullivan and Robert Onstott]
 
-Copyright (c) _date_ _author name(s)_
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

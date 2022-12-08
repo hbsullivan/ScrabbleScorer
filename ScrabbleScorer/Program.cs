@@ -13,7 +13,7 @@ namespace Interface
       string userInput = Console.ReadLine().ToLower();
       Scrabble userWord = new Scrabble(userInput);
 
-      Console.WriteLine(userWord.WordScore());
+      Console.WriteLine("The score for " + userInput + " is: " + userWord.WordScore());
 
       Console.WriteLine("Would you like to play again? [Y]/[N]");
       string replay = Console.ReadLine().ToLower();

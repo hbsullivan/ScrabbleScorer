@@ -1,6 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ScrabbleScorer.Models;
 using System;
+using System.Collections.Generic;
 
 namespace ScrabbleScorer.Tests
 {
@@ -34,7 +35,7 @@ namespace ScrabbleScorer.Tests
       CollectionAssert.AreEqual(expected, result); 
     }
 
-    [TesteMethod]
+    [TestMethod]
 
     public void WordScore_ReturnsScoreOfWord_Int()
     {
@@ -42,6 +43,7 @@ namespace ScrabbleScorer.Tests
       Scrabble newScrabble = new Scrabble(userWord);
       int expected = 8;
       int result = newScrabble.WordScore();
+      Assert.AreEqual(expected, result);
     }
 
   }

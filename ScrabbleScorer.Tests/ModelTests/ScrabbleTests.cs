@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ScrabbleScorer.Models;
+using System;
 
 namespace ScrabbleScorer.Tests
 {
@@ -29,8 +30,8 @@ namespace ScrabbleScorer.Tests
       string userWord = "garden";
       Scrabble newScrabble = new Scrabble(userWord);
       char[] expected = new char[] {'g','a','r','d','e','n'};
-      char[] wordArray = newScrabble.UserWord.ToCharArray();
-      CollectionAssert.AreEqual(expected, wordArray); 
+      char[] result = newScrabble.StringToArray();
+      CollectionAssert.AreEqual(expected, result); 
     }
 
   }

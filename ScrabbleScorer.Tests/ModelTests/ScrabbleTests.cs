@@ -15,13 +15,22 @@ namespace ScrabbleScorer.Tests
     }
 
     [TestMethod]
-
     public void GetUserWord_ReturnsUserWord_String()
     {
       string userWord = "garden";
       Scrabble newScrabble = new Scrabble(userWord);
       string result = newScrabble.UserWord;
       Assert.AreEqual(userWord, result); 
+    }
+
+    [TestMethod]
+    public void WordToArray_ReturnsArrayOfCharacters_CharArray()
+    {
+      string userWord = "garden";
+      Scrabble newScrabble = new Scrabble(userWord);
+      char[] expected = new char[] {'g','a','r','d','e','n'};
+      char[] wordArray = newScrabble.UserWord.ToCharArray();
+      CollectionAssert.AreEqual(expected, wordArray); 
     }
 
   }
